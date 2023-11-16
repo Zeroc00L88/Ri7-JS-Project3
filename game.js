@@ -91,7 +91,7 @@ function Player(name, pv){
     // Attack method for computer, that choose an attack randomly
     this.randomAttack = () => {
         let chance = Math.random();
-        randomChoice = Math.floor(Math.random() * (5 - 1)) + 1
+        randomChoice = Math.floor(Math.random() * 4) + 1
         switch (randomChoice) {
             case 1:
                 if(chance < atkOne.accuracy){
