@@ -53,7 +53,7 @@ function Player(name, pv){
         switch (choosenAtk) {
             case 1:
                 if(chance < atkOne.accuracy){
-                    console.log(this.name,"attaque ! et inflige", atkOne.power, "pv")
+                    console.log(this.name,"utilise", atkOne.name,"! et inflige", atkOne.power, "pv")
                     return atkOne.power;
                 } else {
                     console.log(this.name, "loupe son attaque !")
@@ -70,7 +70,7 @@ function Player(name, pv){
                 }
             case 3:
                 if (chance < atkThree.accuracy) {
-                    console.log(this.name, "attaque ! et inflige", atkThree.power, "pv")
+                    console.log(this.name, "utilise", atkThree.name, "! et inflige", atkThree.power, "pv")
                     return atkThree.power;
                 } else {
                     console.log(this.name, "loupe son attaque !")
@@ -78,7 +78,7 @@ function Player(name, pv){
                 }
             case 4:
                 if (chance < atkFour.accuracy) {
-                    console.log(this.name, "attaque ! et inflige", atkFour.power, "pv")
+                    console.log(this.name, "attaque !", atkFour.name, "! et inflige", atkFour.power, "pv")
                     return atkFour.power;
                 } else {
                     console.log(this.name, "loupe son attaque !")
@@ -95,7 +95,7 @@ function Player(name, pv){
         switch (randomChoice) {
             case 1:
                 if(chance < atkOne.accuracy){
-                    console.log(this.name,"attaque ! et inflige", atkOne.power, "pv")
+                    console.log(this.name, "utilise", atkOne.name, "! et inflige", atkOne.power, "pv")
                     return atkOne.power;
                 } else {
                     console.log(this.name, "loupe son attaque !")
@@ -112,7 +112,7 @@ function Player(name, pv){
                 }
             case 3:
                 if (chance < atkThree.accuracy) {
-                    console.log(this.name, "attaque ! et inflige", atkThree.power, "pv")
+                    console.log(this.name, "utilise", atkThree.name,"! et inflige", atkThree.power, "pv")
                     return atkThree.power;
                 } else {
                     console.log(this.name, "loupe son attaque !")
@@ -120,7 +120,7 @@ function Player(name, pv){
                 }
             case 4:
                 if (chance < atkFour.accuracy) {
-                    console.log(this.name, "attaque ! et inflige", atkFour.power, "pv")
+                    console.log(this.name, "utilise", atkFour.name,"! et inflige", atkFour.power, "pv")
                     return atkFour.power;
                 } else {
                     console.log(this.name, "loupe son attaque !")
