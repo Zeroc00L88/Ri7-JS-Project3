@@ -133,11 +133,12 @@ function Player(name, pv){
 }
 
 // Player create
+console.log("Vous allez affronter le Sombre Lutin !!!!!!!!!")
 const playerName = prompt("Création du joueur, entrez votre nom : ")
 let pv = parseInt(prompt("Entrez le nombre de point de vie des joueurs de la parties : "))
 
 let player = new Player(playerName, pv);
-let computer = new Player("Ordinateur", pv);
+let computer = new Player("Sombre Lutin", pv);
 
 // Game Loop
 while(player.getPv() > 0 && computer.getPv() > 0) {
